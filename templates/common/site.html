@@ -1,0 +1,32 @@
+{% load static %}
+{#{% load less %}#}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="{% static 'css/styles.less' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/clear.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/nav-bar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+    {% block links %}{% endblock %}
+</head>
+<body>
+{% include 'common/nav-bar.html' %}
+{% block content %}
+
+
+{% endblock %}
+{% include 'common/footer.html' %}
+{% block script %}{% endblock %}
+<script type="application/javascript" rel="script" src="{% static 'js/main.js' %}"></script>
+<script type="application/javascript" rel="script" src="{% static 'js/nav-bar.js' %}"></script>
+</body>
+</html>

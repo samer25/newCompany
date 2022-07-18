@@ -1,0 +1,49 @@
+{% load static %}
+<header class="nav-bar">
+    <img src="{% static 'media/logo2.png' %}" class="logo">
+    <a class="icon" id="btnMenu">
+        <i id="menu" class="fa fa-bars"></i>
+    </a>
+    <div class="nav-links" id="nav-links">
+        <ul>
+            <li><a href="#"><span>На</span>чало</a></li>
+            <li><a href="#"><span>За</span> Нас</a></li>
+            <li><a href="#"><span>Ус</span>луги</a></li>
+            <li><a href="#"><span>По</span>искай Оферта</a></li>
+            <li><a href="#"><span>Ко</span>нтакти</a></li>
+        </ul>
+    </div>
+</header>
+
+{#{% block script %}#}
+<script>
+    let menuBtn = document.getElementById('btnMenu');
+    let resMenu = document.getElementById('nav-links');
+    let menu = document.getElementById('menu');
+    window.onload = function () {
+        if (window.innerWidth < 1200) {
+            resMenu.style.right = '-288px';
+        } else {
+            resMenu.style.right = '-30px';
+
+        }
+    }
+    menuBtn.onclick = function () {
+        if (resMenu.style.right == '-288px') {
+            resMenu.style.right = '-30px';
+            menu.classList.add('fa-times');
+            menu.classList.remove('fa-bars');
+            menu.style.color = 'white';
+
+        } else {
+            resMenu.style.right = '-288px';
+            menu.classList.add('fa-bars');
+            menu.classList.remove('fa-times');
+            menu.style.color = '#239bffff';
+
+
+        }
+    }
+
+</script>
+{#{% endblock %}#}

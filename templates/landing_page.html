@@ -1,0 +1,245 @@
+{% extends 'common/site.html' %}
+{% load static %}
+{% block links %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/landing-page.css' %}">
+{% endblock %}
+
+{% block title %}Terra Digital Web{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div id="hero-box">
+            <div class="hero_header">
+                <strong style="color:#239bffff">Уеб </strong>
+                <span>Дизайн и Разработване</span>
+            </div>
+
+            <div class="hero_header">
+                <span>Подръжка на </span>
+                <strong style="color:#239bffff">Уебсайт</strong>
+            </div>
+
+            <div class="hero_header">
+                <strong style="color:#239bffff">Уеб </strong>
+                <span>Подръжка на Съдържание</span>
+            </div>
+
+        </div>
+
+        <p>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry's</p>
+
+        <div class="links-buttons">
+            <a class="link-btn" href="#">Услуги</a>
+            <a class="link-btn" href="#">Поискай Оферта</a>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+
+        <div class="title-text">
+            <p>Защо Нас</p>
+            <h1>Защо Да Изберете Нас?</h1>
+        </div>
+
+        <div class="projects-box">
+            <div class="project">
+                <img src="{% static 'media/design-img.jpg' %}">
+                <div class="overlay"></div>
+                <div class="project-desc">
+                    <h3>Wed Design and Development</h3>
+                    <hr>
+                    <p>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="{% static 'media/maintenance-img.jpg' %}">
+                <div class="overlay"></div>
+                <div class="project-desc">
+                    <h3>Website Maintenance</h3>
+                    <hr>
+                    <p>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="{% static 'media/marketing-img.jpg' %}">
+                <div class="overlay"></div>
+                <div class="project-desc">
+                    <h3>Digital Marketing</h3>
+                    <hr>
+                    <p>lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="title-text">
+            <p>Услуги</p>
+            <h1>Услуги Които Предлагаме</h1>
+        </div>
+        <div class="services-box">
+            <div class="service">
+                <h1>Уеб дизайн и разработване</h1>
+                <div class="service-desc">
+                    <div class="service-icon">
+                        <i class="fa fa-connectdevelop icon-g"></i>
+                    </div>
+                    <div class="goal-text">
+                        <p>
+                            lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book
+                        </p>
+                    </div>
+                </div>
+                <h1>Подръжка На Уебсайт</h1>
+                <div class="service-desc">
+                    <div class="service-icon">
+                        <i class="fa fa-connectdevelop icon-g"></i>
+                    </div>
+                    <div class="goal-text">
+                        <p>
+                            lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book
+                        </p>
+                    </div>
+                </div>
+                <h1>Подръжка На Съдържание</h1>
+                <div class="service-desc">
+                    <div class="service-icon">
+                        <i class="fa fa-connectdevelop icon-g"></i>
+                    </div>
+                    <div class="goal-text">
+                        <p>
+                            lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book
+                        </p>
+                    </div>
+                </div>
+                <h1>Уеб Хостинг</h1>
+                <div class="service-desc">
+                    <div class="service-icon">
+                        <i class="fa fa-connectdevelop icon-g"></i>
+                    </div>
+                    <div class="goal-text">
+                        <p>
+                            lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="goal-img">
+                <img class="front-service-img" src="{% static 'media/goal-front.png' %}">
+                {#                <img class="back-service-img" src="{% static 'media/back-goal.png' %}">#}
+            </div>
+        </div>
+    </section>
+
+    <!-- About Company Section -->
+    <section class="about-section">
+        <div class="title-text">
+            <p>За Нас</p>
+            <h1>Terra Digital Web</h1>
+        </div>
+        <div class="about-box">
+            <div class="about">
+                <div class="testimonial-desc">
+                    <div class="about-text">
+                        <p>
+                            lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a
+                            galley of type and scrambled it to make a type specimen book
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="title-text">
+            <p>Наще Клиенти</p>
+            <h1>Какво Казват Клиентите За Нас</h1>
+        </div>
+        <div class="testimonial-box">
+            <div class="mySlides fade">
+                <div class="testimonial">
+                    <h1>Client 7</h1>
+                    <div class="testimonial-desc">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left icon-t"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <h1>Client 8</h1>
+                    <div class="testimonial-desc">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left icon-t"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <h1>Client 9</h1>
+                    <div class="testimonial-desc">
+                        <div class="testimonial-icon">
+                            <i class="fa fa-quote-left icon-t"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        {#        <div style="text-align:center">#}
+        {#            <span class="dot"></span>#}
+        {#            <span class="dot"></span>#}
+        {#            <span class="dot"></span>#}
+        {#        </div>#}
+    </section>
+
+{% endblock %}
+{% block script %}
+    <script type="application/javascript" rel="script" src="{% static 'js/landing-page.js' %}"></script>
+{% endblock %}
